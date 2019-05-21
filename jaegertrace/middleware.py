@@ -64,8 +64,8 @@ class TraceMiddleware(MiddlewareMixin):
                 if environ['SERVER_PORT'] != '80':
                     url += ':' + environ['SERVER_PORT']
 
-        url += urllib.parse.quote(environ.get('SCRIPT_NAME', ''))
-        url += urllib.parse.quote(environ.get('PATH_INFO', ''))
+        url += urllib.quote(environ.get('SCRIPT_NAME', ''))
+        url += urllib.quote(environ.get('PATH_INFO', ''))
         if environ.get('QUERY_STRING'):
             url += '?' + environ['QUERY_STRING']
         setattr(request, 'full_url', url)
