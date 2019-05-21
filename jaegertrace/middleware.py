@@ -71,7 +71,7 @@ class TraceMiddleware(MiddlewareMixin):
         setattr(request, 'full_url', url)
 
     def process_request(self, request):
-        from huipy.tracer.initial_tracer import initialize_global_tracer
+        from initial_tracer import initialize_global_tracer
         self._tracer = initialize_global_tracer()
         self._parse_wsgi_headers(request)
         self.full_url(request)
