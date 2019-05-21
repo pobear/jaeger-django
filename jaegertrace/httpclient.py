@@ -17,8 +17,8 @@ from urllib3.util import parse_url
 
 
 from huipy.logger import request_logger
-from huipy.tracer.initial_tracer import initialize_global_tracer
-from huipy.tracer.request_context import get_current_span
+from initial_tracer import initialize_global_tracer
+from request_context import get_current_span
 
 logger = logging.getLogger(__name__)
 
