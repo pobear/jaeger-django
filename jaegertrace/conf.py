@@ -34,9 +34,9 @@ CONFIG = {
         'type': SAMPLE_TYPE,
         'param': SAMPLE_PARAM,
     },
-    'local_agent': {
-        'reporting_host': REPORTING_HOST,
-    },
-    'trace_id_header': TRACE_ID_HEADER,
-    'baggage_header_prefix': BAGGAGE_HEADER_PREFIX,
+    #'local_agent': {
+    #    'reporting_host': REPORTING_HOST,
+    #},
+    #'trace_id_header': TRACE_ID_HEADER,
+    #'baggage_header_prefix': BAGGAGE_HEADER_PREFIX,
 }
