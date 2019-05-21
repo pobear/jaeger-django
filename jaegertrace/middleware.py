@@ -13,7 +13,7 @@ except ImportError:
 from opentracing import Format
 from opentracing.ext import tags
 
-from huipy.tracer.request_context import get_current_span, span_in_context, span_out_context
+from request_context import get_current_span, span_in_context, span_out_context
 
 
 class TraceMiddleware(MiddlewareMixin):
